@@ -1,0 +1,13 @@
+.Chatbot {
+    padding: 0%;
+    width: 60%;
+    height: 100%;
+    margin-left: 4%; 
+    margin-right: auto;
+    margin-top: 0%;
+    .title {
+        margin-left: 0%;
+    }
+}
+
+  
