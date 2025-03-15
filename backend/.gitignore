@@ -2,6 +2,8 @@
 
 # Node
 /node_modules
+/data
+/notes
 npm-debug.log
 yarn-error.log
 
