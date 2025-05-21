@@ -22,7 +22,7 @@ export const generateResponse = async (context, query, llmModel) => {
   
     const result = await chain.invoke({ context, query });
 
-    console.log(result)
+    // console.log(result)
     // output filtering by trimming response before colon
     const parts = result.split(':');
     return parts.length > 1 ? parts.slice(1).join(':').trim() : result;

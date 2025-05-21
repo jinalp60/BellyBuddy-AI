@@ -19,7 +19,7 @@ export const getSplitDocuments = async (dataDir) => {
   
       const splitDocs = await textSplitter.splitDocuments(directoryDocs);
   
-      console.log("documents split was successful,", splitDocs[0])
+      // console.log("documents split was successful,", splitDocs[0])
       return splitDocs;
     } catch (error) {
       console.error("Error while processing documents:", error);

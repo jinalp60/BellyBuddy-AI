@@ -11,7 +11,7 @@ import { generateResponse } from './responseGenerator.js';
 export const ragPipeline = async (query, vectorStore, llmModel) => {
   try {
     // crafting and refining prompt (a.k.a. prompt engineering)
-    const questionPattern = /(what|how|why|when|where|is|am|can|do|does|are|will|could|would|should|did|which|whom|whose|who).*?/i;
+    const questionPattern = /\b(what|how|why|when|where|is|am|me|can|do|does|are|will|could|would|should|did|which|whom|whose|who)\b/i;
     
     if (!questionPattern.test(query)) {
       return "How can I assist you today?";

@@ -5,7 +5,7 @@ export const retrieveContext = async (query, vectorStore) => {
 
     const retriever = vectorStore.asRetriever({ k: 1, searchType: "similarity" });
     const results = await retriever.invoke(query);
-    console.log("similarity search result:", results);
+    // console.log("similarity search result:", results);
     
     return results;
   } catch (error) {
