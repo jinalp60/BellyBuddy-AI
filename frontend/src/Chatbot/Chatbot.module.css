@@ -1,8 +1,8 @@
 .Chatbot {
     padding: 0%;
-    width: 60%;
+    width: 100%;
     height: 100%;
-    margin-left: 4%; 
+    margin-left: -2%; 
     margin-right: auto;
     margin-top: 0%;
     .title {
