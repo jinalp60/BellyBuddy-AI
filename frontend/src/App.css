@@ -1,9 +1,30 @@
+.layout-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 30%;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.sidebar img {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
+}
+
 /* General App Layout */
 .app-wrapper {
+  margin-left: 31%;
   font-family: "Segoe UI", sans-serif;
   background-color: white;
-  width: 60%;
-  margin: 0 auto; /* centers the container horizontally */
+  width: 70%;
+  /* margin: 0 auto; centers the container horizontally */
   height: 100vh;
   /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); optional: adds a soft shadow */
   border-radius: 12px; /* optional: rounded edges */
@@ -46,7 +67,7 @@
 
 .chat-container {
   width: 100%;
-  max-width: 800px;
+  max-width: 920px;
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0,0,0,0.05);
@@ -75,16 +96,14 @@
   height: 465px !important;
   overflow-y: auto;
   background-color: white;
-   /* margin-left: -5%; */
 }
 
 .react-chatbot-kit-chat-header {
   font-size: 20px;
-  color: #333;
+  color: #3d3251 !important;
   background-color: white;
   font-weight: 700;
   margin-bottom: 1rem;
-  /* margin-left: -5%; */
   margin-top: -4%;
   border-bottom: 1px solid #eee;
   padding-bottom: 0.5rem;
@@ -92,12 +111,12 @@
 
 .react-chatbot-kit-chat-bot-message
 {
-font-size: 16px !important;
-font-weight: 500;
+  font-size: 16px !important;
+  font-weight: 500;
   margin: 8px 0;
   line-height: 1.5;
-  color: black;
-  width: 500px !important;
+  color: #3d3251;
+  width: 600px !important;
   background-color: #f8f4ff !important;
 }
 
@@ -107,7 +126,7 @@ font-weight: 500;
   font-weight: 500;
   margin: 8px 0;
   line-height: 1.5;
-  color: black;
+  color: #3d3251;
   background-color: #eae0f9;
 }
 

@@ -13,7 +13,7 @@ export const initializeVectorStore = async (splitDocs, embeddingModel) => {
 
     // index the documents and stores in vector store
     await vectorStore.addDocuments(splitDocs);
-    console.log("vector store initialized")
+    
     return vectorStore;
   } catch (error) {
     console.error("Error while initializing vector store:", error);

@@ -72,7 +72,7 @@ app.post("/chat-llm", async (req, res) => {
 (async () => {
     try {
         await history.clear();
-        console.log((await history.getMessages()).length)
+        // console.log((await history.getMessages()).length)
         vectorStore = await setupVectorStore(path.resolve(dataDir), embeddingModel);
         console.log("Vector store initialized successfully");
 
